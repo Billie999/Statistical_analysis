@@ -2,7 +2,7 @@
 
 # Question 1
 # The lifetime of a particular type of TV
-#follows a normal distribution with 𝜇=4800 hours, and = 𝜎=400 hours. 
+# follows a normal distribution with 𝜇=4800 hours, and = 𝜎=400 hours. 
 
 # (a) Find the probability that a single randomly-chosen TV 
 # will last less than 4,500 hours.
@@ -24,7 +24,7 @@ sd(y) #standard deviation of y
 prob2<-pnorm(4500, mean = mean(y), sd = sd(y), lower.tail=TRUE, log.p = FALSE)
 print(prob2)
 
-# (c)Compare answers from (a) and (b). 
+# (c) Compare answers from (a) and (b). 
 # Generate standard normal Distribution with 23% probability
 
 par(mfrow=c(1,2)) # to query graphical parameters
@@ -100,8 +100,8 @@ wilcox.test(beta$pre, beta$post, paired = TRUE, alternative = "two.sided")
 data("PlantGrowth") # load specified dataset
 View(PlantGrowth) # check the data have been loaded correctly
 str(PlantGrowth) # data structure compact display
-# Summary statistics of the data
 
+# Summary statistics of the data
 summary(PlantGrowth) # summarize a dataset with summary
 mean(PlantGrowth[which(PlantGrowth$group=='ctrl'),]$weight)
 mean(PlantGrowth[which(PlantGrowth$group=='trt1'),]$weight)
